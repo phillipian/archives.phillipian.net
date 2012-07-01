@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^([a-z]+)$ /$1.php [L]
+RewriteRule ^([0-9]{4})$ /browse.php?year=$1 [L]
