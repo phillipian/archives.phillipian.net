@@ -126,7 +126,7 @@ body {
 	float: left;
 	padding-left: 4px;
 	padding-right: 20px;
-	width: 340px;
+	width: 336px;
 	height: 80px;
 }
 #by-year h1 {
@@ -161,7 +161,7 @@ body {
 	color: #1D629F;
 	float: left;
 	width: 178px;
-	height: 80px;
+	height: 78px;
 	border: 1px #CCCCCC solid;
 	line-height: 80px;
 	font-size: 19px;
@@ -186,7 +186,6 @@ body {
 .issue {
 	float: left;
 	width: 200px;
-	margin: 10px;
 }
 .fb-like {
 	height: 30px;

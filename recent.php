@@ -10,6 +10,7 @@
 		$('.masonry-container').masonry({
 			itemSelector: '.issue',
 			columnWidth: 240,
+			gutterWidth: 10,
 			isFitWidth: true
 		});
 	});
