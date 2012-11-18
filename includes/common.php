@@ -2,6 +2,8 @@
 
 /* includes/common.php -- common functions and variables */
 
+error_reporting(0); // turn off all error reporting
+
 $root_dir = "../pdfs/";
 $root_url = "http://pdf.phillipian.net/";
 
@@ -74,6 +76,25 @@ function displayRecent($dir, $year, $root_url, $num) {
 				"</p></div></a>". 
 			"<div class=\"mosaic-backdrop\">".getThumb($file, $year)."</div></div></div>";
         }
+	}
+}
+
+function getLinkToLatestIssue() {
+	
+	$year = date('Y');
+	$month = date('n');
+	$dir = $root_dir.$year;
+	
+	if (is_dir($dir)) {
+		$files = scandir($dir);
+		rsort($files);
+		echo $root_url."$year/$files[0]";
+	}
+	else {
+		$dir = $root_dir.($year-1);
+		$files = scandir($dir);
+		rsort($files);
+		echo $root_url."$year/$files[0]";
 	}
 }
 ?>

@@ -1,4 +1,4 @@
-/* reset.css */
+﻿/* reset.css */
 html {
 	margin: 0;
 	padding: 0;
@@ -92,6 +92,9 @@ p {
 }
 a {
 	color: #00325F;
+}
+i {
+	font-style: italic;
 }
 .last {
 	margin-right: 0;
@@ -190,4 +193,8 @@ body {
 	width: 200px;
 	margin: 10px;
 
+}
+
+.fb-like {
+	height: 30px;
 }
