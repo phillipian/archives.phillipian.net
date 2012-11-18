@@ -88,7 +88,7 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 	margin: 0;
 }
 p {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.2em;
 }
 a {
 	color: #00325F;
@@ -129,18 +129,16 @@ body {
 	width: 340px;
 	height: 80px;
 }
-
-#by-year h1{
+#by-year h1 {
 	margin: 10px 0 5px 0;
 	font-size: 35px;
 }
-#browse #title h1{
+#browse #title h1 {
 	margin-bottom: 10px;
 }
 #browse #title {
 	margin-bottom: 10px;
 }
-
 #links {
 	font-size: 22px;
 	float: left;
@@ -177,9 +175,7 @@ body {
 	float: left;
 }
 #browse, #by-year {
-	width: 90%;
 	padding: 20px;
-	margin: 0 auto;
 }
 #feedback {
 	padding-top: 20px;
@@ -187,14 +183,14 @@ body {
 	width: 960px;
 	float: left;
 }
-
 .issue {
 	float: left;
 	width: 200px;
 	margin: 10px;
-
 }
-
 .fb-like {
 	height: 30px;
+}
+.masonry-container {
+	margin: 0 auto;
 }

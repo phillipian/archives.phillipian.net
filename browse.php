@@ -23,8 +23,9 @@
 	$(function(){
 		$('.fade').mosaic();
 		$('.masonry-container').masonry({
-			itemSelector : '.issue',
-			columnWidth : 240
+			itemSelector: '.issue',
+			columnWidth: 240
+			isFitWidth: true
 		});
 	});
 

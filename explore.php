@@ -8,7 +8,7 @@
 	$(function(){
 		$('.masonry-container').masonry({
 			itemSelector : '.item',
-			columnWidth : 240
+			columnWidth : 180
 		});
 	});
 </script>
