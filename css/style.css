@@ -186,6 +186,7 @@ body {
 .issue {
 	float: left;
 	width: 200px;
+	margin: 0 0 20px 0;
 }
 .fb-like {
 	height: 30px;

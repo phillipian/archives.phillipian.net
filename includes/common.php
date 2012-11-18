@@ -46,13 +46,22 @@ function displayIssues($dir, $year, $root_url) {
 
 	foreach ($files as $file){
 		if (isPDF($file)) {
-		if ($year >= 2011) $height = 420;
-		else if ($year >= 2004) $height = 370;
-		else if ($year >= 1975) $height = 350;
-		else if ($year >= 1901) $height = 320;
-		else $height = 280;
+		//if ($year >= 2011) $height = 420;
+		//else if ($year >= 2004) $height = 370;
+		//else if ($year >= 1975) $height = 350;
+		//else if ($year >= 1901) $height = 320;
+		//else $height = 280;
 
-    		echo "<div class=\"issue\" style=\"height: ".$height."px\"><div class=\"mosaic-block fade\" style=\"height: ".getHeight($file)."px\">".
+			/*
+			echo "<div class=\"issue\" style=\"height: ".$height."px\"><div class=\"mosaic-block fade\" style=\"height: ".getHeight($file)."px\">".
+				"<a href=\"$root_url$year/$file\" class=\"mosaic-overlay\">". 
+					"<div class=\"details\" style=\"padding-top: ".getHeight($file)*0.4."px\">".
+						"<p>Published on <br>".
+						getIssueDate($file).
+				"</p></div></a>". 
+			"<div class=\"mosaic-backdrop\">".getThumb($file, $dir)."</div></div></div>";*/
+
+    		echo "<div class=\"issue\"><div class=\"mosaic-block fade\" style=\"height: ".getHeight($file)."px\">".
 				"<a href=\"$root_url$year/$file\" class=\"mosaic-overlay\">". 
 					"<div class=\"details\" style=\"padding-top: ".getHeight($file)*0.4."px\">".
 						"<p>Published on <br>".
