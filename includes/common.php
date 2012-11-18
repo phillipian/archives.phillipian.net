@@ -39,6 +39,7 @@ function getHeight($file){
 	$size = getimagesize("thumbs/$file.jpg");
 	return $size[1];
 }
+
 function displayIssues($dir, $year, $root_url) {	
 	$files = scandir($dir);
 	rsort($files);
@@ -88,13 +89,14 @@ function getLinkToLatestIssue() {
 	if (is_dir($dir)) {
 		$files = scandir($dir);
 		rsort($files);
-		echo $root_url."$year/$files[0]";
+		return $root_url."$year/$files[0]";
 	}
+	
 	else {
 		$dir = $root_dir.($year-1);
 		$files = scandir($dir);
 		rsort($files);
-		echo $root_url."$year/$files[0]";
+		return $root_url."$year/$files[0]";
 	}
 }
 ?>
