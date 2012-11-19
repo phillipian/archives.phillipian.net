@@ -16,7 +16,7 @@
 		<a href="http://phillipian.net">Go back to The Phillipian Online</a>
 	</div>
 	<div id="links">
-		<a id="latest" class="link rounded" href="<?php echo getLinkToLatestIssue(); ?>">
+		<a id="latest" class="link rounded" href="<?php echo getLinkToLatestIssue("../pdfs/", "http://pdf.phillipian.net/"); ?>">
 		Latest</a> <a id="recent" class="link rounded" href="recent.php">Recent</a>
 		<a id="browse-year" class="link rounded" href="explore.php">Browse</a>
 		<a id="go-back" class="link rounded last" href="random.php">Random</a>

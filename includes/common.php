@@ -4,8 +4,8 @@
 
 error_reporting(0); // turn off all error reporting
 
-var $root_dir = "../pdfs/";
-var $root_url = "http://pdf.phillipian.net/";
+$root_dir = "../pdfs/";
+$root_url = "http://pdf.phillipian.net/";
 
 function isPDF ($file) {
 	$ext = substr($file, -4);
@@ -81,7 +81,7 @@ function displayRecent($dir, $year, $root_url, $num) {
 	}
 }
 
-function getLinkToLatestIssue() {
+function getLinkToLatestIssue($root_dir, $root_url) {
 	
 	$year = date('Y');
 	$month = date('n');
