@@ -7,6 +7,8 @@ error_reporting(0); // turn off all error reporting
 $root_dir = "../pdfs/";
 $root_url = "http://pdf.phillipian.net/";
 
+$site_url = "http://archives.phillipian.net/";
+
 function isPDF ($file) {
 	$ext = substr($file, -4);
 	return ($ext == ".pdf");
@@ -46,19 +48,20 @@ function displayIssues($dir, $year, $root_url) {
 
 	foreach ($files as $file){
 		if (isPDF($file)) {
-		if ($year >= 2011) $height = 420;
-		else if ($year >= 2004) $height = 370;
-		else if ($year >= 1975) $height = 350;
-		else if ($year >= 1901) $height = 320;
-		else $height = 280;
+			$filename = str_replace('.pdf', '', $file);
+			if ($year >= 2011) $height = 420;
+			else if ($year >= 2004) $height = 370;
+			else if ($year >= 1975) $height = 350;
+			else if ($year >= 1901) $height = 320;
+			else $height = 280;
 
-    		echo "<div id=\"$file\" class=\"issue\" style=\"height: ".$height."px\"><div class=\"mosaic-block fade\" style=\"height: ".getHeight($file)."px\">".
+    		echo "<div id=\"$filename\" class=\"issue\" style=\"height: ".$height."px\"><div class=\"mosaic-block fade\" style=\"height: ".getHeight($file)."px\">".
 				"<a href=\"$root_url$year/$file\" class=\"mosaic-overlay\">". 
 					"<div class=\"details\" style=\"padding-top: ".getHeight($file)*0.4."px\">".
 						"<p>Published on <br>".
 						getIssueDate($file).
 				"</p>".
-				'<div class="fb-like" data-href="http://archives.phillipian.net/browse.php?year='.$year.'#'.$file.'" data-send="true" data-layout="button_count" data-width="240" data-show-faces="false"></div>'.
+				'<div class="fb-like" data-href="'.$site_url.'/browse.php?year='.$year.'#'.$file.'" data-send="true" data-layout="button_count" data-width="240" data-show-faces="false"></div>'.
 				"</div></a>". 
 			"<div class=\"mosaic-backdrop\">".getThumb($file, $dir)."</div></div></div>";
         }
