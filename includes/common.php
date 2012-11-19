@@ -56,10 +56,7 @@ function displayIssues($dir, $year, $root_url) {
 			echo "<div id=\"$filename\" class=\"issue\" style=\"height: ".$height."px\"><div class=\"mosaic-block fade\" style=\"height: ".getHeight($file)."px\">".
 				"<a href=\"$root_url$year/$file\" class=\"mosaic-overlay\">". 
 					"<div class=\"details\" style=\"padding-top: ".getHeight($file)*0.4."px\">".
-						"<p>Published on <br>".
-						getIssueDate($file).
-				"</p>".
-				'<meta property="og:title" content="'.getIssueDate($file).'"/>'.
+						"<p>".getIssueDate($file)."</p>".
 				'<div class="fb-like" data-href="http://archives.phillipian.net/browse.php?year='.$year.'#'.$filename.'" data-send="true" data-layout="button_count" data-width="240" data-show-faces="false"></div>'.
 				"</div></a>". 
 			"<div class=\"mosaic-backdrop\">".getThumb($file, $dir)."</div></div></div>";
