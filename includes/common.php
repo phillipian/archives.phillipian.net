@@ -4,8 +4,8 @@
 
 error_reporting(0); // turn off all error reporting
 
-$root_dir = "../pdfs/";
-$root_url = "http://pdf.phillipian.net/";
+var $root_dir = "../pdfs/";
+var $root_url = "http://pdf.phillipian.net/";
 
 function isPDF ($file) {
 	$ext = substr($file, -4);
@@ -57,7 +57,7 @@ function displayIssues($dir, $year, $root_url) {
 				"<a href=\"$root_url$year/$file\" class=\"mosaic-overlay\">". 
 					"<div class=\"details\" style=\"padding-top: ".getHeight($file)*0.4."px\">".
 						"<p>".getIssueDate($file)."</p>".
-				'<div class="fb-like" data-href="http://archives.phillipian.net/browse.php?year='.$year.'#'.$filename.'" data-send="true" data-layout="button_count" data-width="240" data-show-faces="false"></div>'.
+				'<div class="fb-like" data-href="http://archives.phillipian.net/browse.php?year='.$year.'#'.$filename.'" data-send="true" data-layout="button_count" data-width="130" data-show-faces="false"></div>'.
 				"</div></a>". 
 			"<div class=\"mosaic-backdrop\">".getThumb($file, $dir)."</div></div></div>";
         }

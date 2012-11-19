@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Mosaic - Sliding Boxes and Captions jQuery Plugin
 	Version 1.0.1
 	www.buildinternet.com/project/mosaic
@@ -14,7 +14,6 @@
 }
 /*General Mosaic Styles*/
 .mosaic-block {
-	overflow: hidden;
 	position: relative;
 	background: #111 url(../img/progress.gif) no-repeat center center;
 	border: 1px solid #fff;
