@@ -7,8 +7,6 @@ error_reporting(0); // turn off all error reporting
 $root_dir = "../pdfs/";
 $root_url = "http://pdf.phillipian.net/";
 
-$base_url = "http://archives.phillipian.net";
-
 function isPDF ($file) {
 	$ext = substr($file, -4);
 	return ($ext == ".pdf");
@@ -61,7 +59,7 @@ function displayIssues($dir, $year, $root_url) {
 						"<p>Published on <br>".
 						getIssueDate($file).
 				"</p>".
-				'<div class="fb-like" data-href="'.$base_url.'/browse.php?year='.$year.'#'.$filename.'" data-send="true" data-layout="button_count" data-width="240" data-show-faces="false"></div>'.
+				'<div class="fb-like" data-href="http://archives.phillipian.net/browse.php?year='.$year.'#'.$filename.'" data-send="true" data-layout="button_count" data-width="240" data-show-faces="false"></div>'.
 				"</div></a>". 
 			"<div class=\"mosaic-backdrop\">".getThumb($file, $dir)."</div></div></div>";
         }
