@@ -23,4 +23,5 @@ if (is_dir($dir)) {
 $rand = mt_rand(0, count($files)-1);
 $redirect = $root_url.$randYear."/".$files[$rand];
 header("Location: $redirect"); 
+
 ?>

@@ -2,16 +2,19 @@
 
 /* includes/common.php -- common functions and variables */
 
-error_reporting(0); // turn off all error reporting
+error_reporting(0); // production site, turn off all error reporting
 
+// useful vars (for ref) -- not actually used, but are passed in as params for the functions
 $root_dir = "../pdfs/";
 $root_url = "http://pdf.phillipian.net/";
 
+// is the file a PDF file? (based on extension of file name)
 function isPDF ($file) {
 	$ext = substr($file, -4);
 	return ($ext == ".pdf");
 }
 
+// returns the HTML for the thumbnail of a given PDF file. If doesn't exist, generates it.
 function getThumb($file, $dir) {
         $source = $dir."/$file".'[0]';
         $dest = "thumbs/$file.jpg";
@@ -24,7 +27,7 @@ function getThumb($file, $dir) {
  		return "<img src=\"$dest\" class=\"thumb\"/>";
    }
    
-   
+// returns a formatted string of the date for a given filename (assumes MMDDYYYY)
 function getIssueDate($file) {
 	if (strlen($file)== 12){
 	$n = substr($file, 0, 2);
@@ -35,11 +38,13 @@ function getIssueDate($file) {
 	return date ("F jS, Y", $converted_date);
 }
 
+// returns the height of a given $file
 function getHeight($file){
 	$size = getimagesize("thumbs/$file.jpg");
 	return $size[1];
 }
 
+// displays all issues of a given $year
 function displayIssues($dir, $year, $root_url) {	
 	$files = scandir($dir);
 	rsort($files);
@@ -64,25 +69,26 @@ function displayIssues($dir, $year, $root_url) {
 	}
 }
 
+// displays the $num most recent issues of a given $year
 function displayRecent($dir, $year, $root_url, $num) {
 	$files = scandir($dir);
 	rsort($files);
 	foreach ($files as $file) {
 		if (++$i == $num) break;
 		if (isPDF($file)) {
-    		echo "<div class=\"issue\"><div class=\"mosaic-block fade\" style=\"height: ".getHeight($file)."px\">".
+    		echo "<div id=\"$filename\" class=\"issue\" style=\"height: ".$height."px\"><div class=\"mosaic-block fade\" style=\"height: ".getHeight($file)."px\">".
 				"<a href=\"$root_url$year/$file\" class=\"mosaic-overlay\">". 
 					"<div class=\"details\" style=\"padding-top: ".getHeight($file)*0.4."px\">".
-						"<p>Published on <br>".
-						getIssueDate($file).
-				"</p></div></a>". 
-			"<div class=\"mosaic-backdrop\">".getThumb($file, $year)."</div></div></div>";
+						"<p>".getIssueDate($file)."</p>".
+				'<div class="fb-like" data-href="http://archives.phillipian.net/browse.php?year='.$year.'#'.$filename.'" data-send="true" data-layout="button_count" data-width="130" data-show-faces="false"></div>'.
+				"</div></a>". 
+			"<div class=\"mosaic-backdrop\">".getThumb($file, $dir)."</div></div></div>";
         }
 	}
 }
 
+// returns URL of the latest issue published on the Archives
 function getLinkToLatestIssue($root_dir, $root_url) {
-	
 	$year = date('Y');
 	$month = date('n');
 	$dir = $root_dir.$year;
