@@ -17,7 +17,7 @@
 <html>
 
 <head>
-<title><?php echo $year; ?> Issues | Phillipian Online Archives</title>
+<title>Browse <?php echo $year; ?> Issues | Phillipian Online Archives</title>
 <?php include('includes/common_header.php'); ?>
 <script type="text/javascript">  
 	$(function(){
@@ -28,6 +28,10 @@
 			gutterWidth: 10,
 			isFitWidth: true
 		});
+		if (typeof window.location.hash != 'undefined') {
+			$(window.location.hash).css('border','2px solid #00325F');
+			$(window.location.hash + ' .mosaic-overlay').css('opacity','1');
+		}
 	});
 
 </script>
