@@ -59,6 +59,7 @@ function displayIssues($dir, $year, $root_url) {
 						"<p>Published on <br>".
 						getIssueDate($file).
 				"</p>".
+				'<meta property="og:title" content="'.getIssueDate($file).'"/>'.
 				'<div class="fb-like" data-href="http://archives.phillipian.net/browse.php?year='.$year.'#'.$filename.'" data-send="true" data-layout="button_count" data-width="240" data-show-faces="false"></div>'.
 				"</div></a>". 
 			"<div class=\"mosaic-backdrop\">".getThumb($file, $dir)."</div></div></div>";
