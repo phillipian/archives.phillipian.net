@@ -53,14 +53,14 @@ function displayIssues($dir, $year, $root_url, $site_url) {
 
 	foreach ($files as $file){
 		if (isPDF($file)) {
-			$filename = str_replace('.pdf', '', $file);
+			$issueDate = substr($file, 0, 2).'-'.substr($file, 2, 2);
 			if ($year >= 2011) $height = 420;
 			else if ($year >= 2004) $height = 370;
 			else if ($year >= 1975) $height = 350;
 			else if ($year >= 1901) $height = 320;
 			else $height = 280;
 
-			echo "<div id=\"$filename\" class=\"issue\" style=\"height: ".$height."px\"><div class=\"mosaic-block fade\" style=\"height: ".getHeight($file)."px\">".
+			echo "<div id=\"$issueDate\" class=\"issue\" style=\"height: ".$height."px\"><div class=\"mosaic-block fade\" style=\"height: ".getHeight($file)."px\">".
 				"<a href=\"$root_url$year/$file\" class=\"mosaic-overlay\">". 
 					"<div class=\"details\" style=\"padding-top: ".getHeight($file)*0.4."px\">".
 						"<p>".getIssueDate($file)."</p>".
@@ -78,7 +78,8 @@ function displayRecent($dir, $year, $root_url, $site_url, $num) {
 	foreach ($files as $file) {
 		if (++$i == $num) break;
 		if (isPDF($file)) {
-    		echo "<div id=\"$filename\" class=\"issue\" style=\"height: ".$height."px\"><div class=\"mosaic-block fade\" style=\"height: ".getHeight($file)."px\">".
+			$issueDate = substr($file, 0, 2).'-'.substr($file, 2, 2);
+    		echo "<div id=\"$issueDate\" class=\"issue\" style=\"height: ".$height."px\"><div class=\"mosaic-block fade\" style=\"height: ".getHeight($file)."px\">".
 				"<a href=\"$root_url$year/$file\" class=\"mosaic-overlay\">". 
 					"<div class=\"details\" style=\"padding-top: ".getHeight($file)*0.4."px\">".
 						"<p>".getIssueDate($file)."</p>".
