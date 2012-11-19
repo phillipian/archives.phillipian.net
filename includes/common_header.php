@@ -1,7 +1,7 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
 <meta property="og:image" content="http://phillipian.net/sq_icon.png">
-<meta property="og:description" content="Explore past issues of The Phillipian since its founding in 1878.">
+<meta property="og:description" content="The Phillipian Online Archives allows you to explore past issues of The Phillipian since its founding in 1878.">
 <meta property="og:site_name" content="The Phillipian Online Archives">
 <meta property="og:type" content="website">
 <meta property="fb:app_id" content="216970804999359">
