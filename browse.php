@@ -30,7 +30,7 @@
 		});
 		if (typeof window.location.hash != 'undefined') {
 			$(window.location.hash).css('border','2px solid #00325F');
-			$(window.location.hash + ' .mosaic-overlay').css('opacity','1');
+			$(window.location.hash + ' .mosaic-overlay').fadeIn().delay(1000).fadeOut();
 		}
 	});
 
