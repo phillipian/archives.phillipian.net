@@ -64,7 +64,7 @@ function displayIssues($dir, $year, $root_url, $site_url) {
 				"<a href=\"$root_url$year/$file\" class=\"mosaic-overlay\">". 
 					"<div class=\"details\" style=\"padding-top: ".getHeight($file)*0.4."px\">".
 						"<p>".getIssueDate($file)."</p>".
-				'<div class="fb-like" data-href="'.$site_url.'browse.php?year='.$year.'#'.$filename.'" data-send="true" data-layout="button_count" data-width="130" data-show-faces="false"></div>'.
+				'<div class="fb-like" data-href="'.$site_url.'browse.php?year='.$year.'#'.$issueDate.'" data-send="true" data-layout="button_count" data-width="130" data-show-faces="false"></div>'.
 				"</div></a>". 
 			"<div class=\"mosaic-backdrop\">".getThumb($file, $dir)."</div></div></div>";
         }
@@ -83,7 +83,7 @@ function displayRecent($dir, $year, $root_url, $site_url, $num) {
 				"<a href=\"$root_url$year/$file\" class=\"mosaic-overlay\">". 
 					"<div class=\"details\" style=\"padding-top: ".getHeight($file)*0.4."px\">".
 						"<p>".getIssueDate($file)."</p>".
-				'<div class="fb-like" data-href="'.$site_url.'browse.php?year='.$year.'#'.$filename.'" data-send="true" data-layout="button_count" data-width="130" data-show-faces="false"></div>'.
+				'<div class="fb-like" data-href="'.$site_url.'browse.php?year='.$year.'#'.$issueDate.'" data-send="true" data-layout="button_count" data-width="130" data-show-faces="false"></div>'.
 				"</div></a>". 
 			"<div class=\"mosaic-backdrop\">".getThumb($file, $dir)."</div></div></div>";
         }
