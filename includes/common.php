@@ -7,7 +7,7 @@ error_reporting(0); // turn off all error reporting
 $root_dir = "../pdfs/";
 $root_url = "http://pdf.phillipian.net/";
 
-$base_url = "http://archives.phillipian.net/";
+$base_url = "http://archives.phillipian.net";
 
 function isPDF ($file) {
 	$ext = substr($file, -4);
