@@ -184,11 +184,14 @@ body {
 	float: left;
 	width: 200px;
 	margin: 0 0 20px 0;
+	-moz-box-shadow: 0 0 6px 1px #ccc;
+	-webkit-box-shadow: 0 0 6px 1px #ccc;
+	box-shadow: 0 0 6px 1px #ccc;
 }
 .issue .fb-like {
 	height: 30px;
 	float: left;
-	margin-left: 32px;
+	margin-left: 35px;
 }
 .masonry-container {
 	margin: 0 auto;
