@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>Browse by Year | Phillipian Online Archives</title>
+<title>Browse by Year | The Phillipian Online Archives</title>
 <?php include('includes/common_header.php'); ?>
 <script>
 	$(function(){

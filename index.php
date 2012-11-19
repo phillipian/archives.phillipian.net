@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>Phillipian Online Archives</title>
+<title>The Phillipian Online Archives</title>
 <?php include('includes/common_header.php'); ?>
 </head>
 

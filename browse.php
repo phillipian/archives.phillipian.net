@@ -17,7 +17,7 @@
 <html>
 
 <head>
-<title>Browse <?php echo $year; ?> Issues | Phillipian Online Archives</title>
+<title>Browse <?php echo $year; ?> Issues | The Phillipian Online Archives</title>
 <?php include('includes/common_header.php'); ?>
 <script type="text/javascript">  
 	$(function(){

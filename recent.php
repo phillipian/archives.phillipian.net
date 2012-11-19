@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>Recent Issues | Phillipian Online Archives</title>
+<title>Recent Issues | The Phillipian Online Archives</title>
 <?php include('includes/common_header.php'); ?>
 <script type="text/javascript">  
 	$(function(){
