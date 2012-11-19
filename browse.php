@@ -52,7 +52,7 @@
 	</div>
 	<div class="masonry-container">
 		<?php
-			if ($year != "null") displayIssues($dir, $year, $root_url);
+			if ($year != "null") displayIssues($dir, $year, $root_url, $site_url);
 		?>
 	</div>
 </div>

@@ -35,8 +35,8 @@
 	</div>
 	<div class="masonry-container">
 		<?php
-			displayRecent($dir1, $year, $root_url, 10); // display 10 most recent issues
-			if ($month == 1 || $month == 2 || $month == 3) displayRecent($dir2, $year-1, $root_url, 10); // if jan, feb, mar. display 10 most recent issues in prev. year as well
+			displayRecent($dir1, $year, $root_url, $site_url, 10); // display 10 most recent issues
+			if ($month == 1 || $month == 2 || $month == 3) displayRecent($dir2, $year-1, $root_url, $site_url, 10); // if jan, feb, mar. display 10 most recent issues in prev. year as well
 		?>
 	</div>
 </div>

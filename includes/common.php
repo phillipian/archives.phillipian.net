@@ -1,12 +1,14 @@
 <?php
+// Built by Eric Ouyang '13 (CXXXIV/CXXXV)
 
 /* includes/common.php -- common functions and variables */
 
 error_reporting(0); // production site, turn off all error reporting
 
-// useful vars (for ref) -- not actually used, but are passed in as params for the functions
+// config vars -- passed in as params for the functions
 $root_dir = "../pdfs/";
 $root_url = "http://pdf.phillipian.net/";
+$site_url = "http://archives.phillipian.net/";
 
 // is the file a PDF file? (based on extension of file name)
 function isPDF ($file) {
@@ -45,7 +47,7 @@ function getHeight($file){
 }
 
 // displays all issues of a given $year
-function displayIssues($dir, $year, $root_url) {	
+function displayIssues($dir, $year, $root_url, $site_url) {	
 	$files = scandir($dir);
 	rsort($files);
 
@@ -62,7 +64,7 @@ function displayIssues($dir, $year, $root_url) {
 				"<a href=\"$root_url$year/$file\" class=\"mosaic-overlay\">". 
 					"<div class=\"details\" style=\"padding-top: ".getHeight($file)*0.4."px\">".
 						"<p>".getIssueDate($file)."</p>".
-				'<div class="fb-like" data-href="http://archives.phillipian.net/browse.php?year='.$year.'#'.$filename.'" data-send="true" data-layout="button_count" data-width="130" data-show-faces="false"></div>'.
+				'<div class="fb-like" data-href="'.$site_url.'browse.php?year='.$year.'#'.$filename.'" data-send="true" data-layout="button_count" data-width="130" data-show-faces="false"></div>'.
 				"</div></a>". 
 			"<div class=\"mosaic-backdrop\">".getThumb($file, $dir)."</div></div></div>";
         }
@@ -70,7 +72,7 @@ function displayIssues($dir, $year, $root_url) {
 }
 
 // displays the $num most recent issues of a given $year
-function displayRecent($dir, $year, $root_url, $num) {
+function displayRecent($dir, $year, $root_url, $site_url, $num) {
 	$files = scandir($dir);
 	rsort($files);
 	foreach ($files as $file) {
@@ -80,7 +82,7 @@ function displayRecent($dir, $year, $root_url, $num) {
 				"<a href=\"$root_url$year/$file\" class=\"mosaic-overlay\">". 
 					"<div class=\"details\" style=\"padding-top: ".getHeight($file)*0.4."px\">".
 						"<p>".getIssueDate($file)."</p>".
-				'<div class="fb-like" data-href="http://archives.phillipian.net/browse.php?year='.$year.'#'.$filename.'" data-send="true" data-layout="button_count" data-width="130" data-show-faces="false"></div>'.
+				'<div class="fb-like" data-href="'.$site_url.'browse.php?year='.$year.'#'.$filename.'" data-send="true" data-layout="button_count" data-width="130" data-show-faces="false"></div>'.
 				"</div></a>". 
 			"<div class=\"mosaic-backdrop\">".getThumb($file, $dir)."</div></div></div>";
         }
