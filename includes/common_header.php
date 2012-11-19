@@ -4,6 +4,7 @@
 <meta property="og:description" content="Explore past issues of The Phillipian since its founding in 1878.">
 <meta property="og:site_name" content="The Phillipian Online Archives">
 <meta property="og:type" content="website">
+<meta property="fb:app_id" content="216970804999359">
 
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/mosaic.css" media="screen" rel="stylesheet" type="text/css" />
