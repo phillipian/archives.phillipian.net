@@ -29,7 +29,7 @@
 			isFitWidth: true
 		});
 		if (typeof window.location.hash != 'undefined') {
-			$(window.location.hash).css('border','2px solid #00325F');
+			$(window.location.hash).css('border','3px solid #00325F');
 		}
 	});
 
