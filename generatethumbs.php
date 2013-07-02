@@ -17,7 +17,7 @@ for ($y = $year; $y >= 1878; $y--) {
 			 		++$found;
 			        if (!file_exists($dest))
 			        {
-			            $exec = "convert -scale 200 $source $dest";
+			            $exec = "~/local/bin/convert -scale 200 $source $dest";
 			            exec($exec);
 			            ++$generated;
 			            echo "generated".$file;
