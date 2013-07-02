@@ -23,7 +23,7 @@ function getThumb($file, $dir) {
  
         if (!file_exists($dest))
         {
-            $exec = "~/local/bin/convert -scale 200 -alpha off -colorspace sRGB -modulate 100,95 '$source' '$dest'";
+            $exec = "~/local/bin/convert -scale 200 -background white -colorspace sRGB -modulate 100,95 '$source' '$dest'";
             exec($exec);
         }
  		return "<img src=\"$dest\" class=\"thumb\"/>";
