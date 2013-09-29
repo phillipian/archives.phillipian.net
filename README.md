@@ -1,5 +1,5 @@
 #The Phillipian Online Archives PDF Interface
-##Built by Eric Ouyang '13 (CXXXIV/CXXXV)
+Built by Eric Ouyang '13 (CXXXIV/CXXXV)
 
 This is a custom coded PHP-based website that displays the grid format all the past Phillipian issues at http://archives.phillipian.net
 
