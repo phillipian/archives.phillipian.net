@@ -16,6 +16,6 @@ if (is_dir($dir)) {
 }
 
 $last = count($files);
-getThumb($files[$last], $root_dir);
+print getThumb($files[$last], $root_dir);
 
 ?>
