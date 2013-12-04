@@ -15,7 +15,8 @@ if (is_dir($dir)) {
     }
 }
 
-$last = count($files);
-print getThumb($files[$last], $root_dir);
+$last = $files[count($files)-1];
+$redirect = $site_url."thumbs/$last.jpg";
+header("Location: $redirect");
 
 ?>
