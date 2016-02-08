@@ -1,5 +1,5 @@
 <div class='issues'>
-  <h1 class='section-title'>Today in History</h1>
+  <!-- <h1 class='section-title'>Today in History</h1> -->
   <?php
     $issues = $archive->getIssuesForDay(date('m'), date('d'));
     if (count($issues) == 0):

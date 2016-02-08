@@ -1,5 +1,5 @@
 <div class='issues'>
-  <h1 class='section-title'>Issues from <?php echo $_GET['year']; ?></h1>
+  <!-- <h1 class='section-title'>Issues from <?php echo $_GET['year']; ?></h1> -->
   <?php
     $issues = $archive->getIssues($_GET['year']);
     if (count($issues) == 0):

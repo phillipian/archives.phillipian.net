@@ -1,5 +1,5 @@
 <div class='issues'>
-  <h1 class='section-title'>Recent</h1>
+  <!-- <h1 class='section-title'>Recent</h1> -->
   <?php foreach($archive->getRecent(15) as $issue): ?>
     <div class='issue'>
       <h3><?php echo $issue->getPrettyDate();?></h3>
