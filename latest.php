@@ -1,7 +1,7 @@
 <?php
-
-include 'includes/common.php';
-$redirect = getLinkToLatestIssue($root_dir, $root_url);
-header("Location: $redirect");
-
+  include_once('lib/Archive.php');
+  $archive = new Archive();
+  include('includes/footer.php');
+  $location = $archive->getLatest()->getURL();
+  header("Location: $location");
 ?>

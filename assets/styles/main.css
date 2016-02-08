@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  /*font-family: Georgia, Times, 'Times New Roman', serif;*/
+  font-family: sans-serif;
+}
+
+.wrapper .header {
+  background-color: #002750;
+  color: white;
+  height: 300px;
+  clear: both;
+}
+
+.wrapper .header .content {
+  width: 1200px;
+  margin: 0 auto;
+  height: 250px;
+}
+
+.wrapper .header .content .branding {
+  height: 100%;
+  width: 800px;
+  float: left;
+}
+
+.wrapper .header .content .branding .logo {
+  background: url('../images/p_white.svg') no-repeat center;
+  width: 110px;
+  margin: 0 50px 0 25px;
+  height: inherit;
+  float: left;
+  display: inline-block;
+}
+
+.wrapper .header .content .branding h1 {
+  margin-top: 80px;
+}
+
+.wrapper .header .content .branding p {
+  font-weight: 100;
+}
+
+.wrapper .header .search select {
+  margin: 100px;
+  border: 1px solid #111;
+  width: 150px;
+  font-size: 30px;
+  border: 1px solid #ccc;
+  height: 50px;
+  float: right;
+}
+
+.wrapper .header .search select:focus {
+  outline: none;
+}
+
+.wrapper .header .navigation {
+  width: 100%;
+  height: 50px;
+  background-color: #095B9B;
+  text-align: center;
+}
+
+.wrapper .header .navigation ul {
+  list-style-type: none;
+  height: inherit;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper .header .navigation ul a li {
+  display: inline-block;
+  /*margin: 0 30px;*/
+  height: inherit;
+  padding: 0 60px;
+  border-right: 1px solid white;
+}
+
+.wrapper .header .navigation ul li:hover {
+  background-color: #004282;
+}
+
+.wrapper .header .navigation ul li:last-child {
+  border-right: none;
+}
+
+.wrapper .header .navigation ul a li p {
+  line-height: 50px;
+}
+
+.wrapper .header .navigation ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper .issues {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.wrapper .issues h1 {
+  font-weight: bold;
+  color: #002750;
+  margin: 20px 0 0 45px;
+}
+
+.wrapper .issues .issue {
+  width: 30%;
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding: 1.5%;
+}
+
+.wrapper .issues .issue h3 {
+  font-weight: 100;
+  color: #002750;
+  width: 300px;
+  margin: 0 auto 10px auto;
+}
+
+.wrapper .issues .issue img {
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
