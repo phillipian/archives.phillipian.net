@@ -33,7 +33,7 @@
       <a href='../today' <?php if (basename($_SERVER['REQUEST_URI'], '.php') === 'today') echo "class='selected'"; ?>><li><p>Today in History</p></li></a>
       <a href='../latest'><li><p>Latest Issue</p></li></a>
       <a href='../random'><li><p>Random Issue</p></li></a>
-      <a href='https://twitter.com/pliparchives'><li><p>Archive Twitter</p></li></a>
+      <a href='https://twitter.com/pliparchives'><li><p>Follow on Twitter</p></li></a>
     </ul>
   </div>
 </div>
