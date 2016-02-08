@@ -55,7 +55,7 @@
     <meta property='og:url' content='http://archives.phillipian.net' />
     <meta property='og:title' content="<?php echo $title; ?>" />
     <meta property='og:description' content="The Phillipian's Archives allow you to explore the 5.2k+ past issues of The Phillipian since its founding in 1857." />
-    <meta property='og:image' content='http://archives.phillipian.net/assets/images/pliparchives_p.jpg' />
+    <meta property='og:image' content='http://archives.phillipian.net/assets/images/facebook_card.png' />
 
     <!-- Facebook data -->
     <meta property='fb:admins' content='100004691580883' />
