@@ -1,6 +1,16 @@
 <?php
   include_once(__DIR__.'/../lib/Archive.php');
   $archive = new Archive();
+
+  // http://stackoverflow.com/a/6225706
+  function sanitize_output($buffer) {
+      $search = ['/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s'];
+      $replace = [ '>', '<', '\\1'];
+
+      return preg_replace($search, $replace, $buffer);
+    }
+
+  ob_start("sanitize_output");
 ?>
 <!-- Created by Rudd Fawcett '18 for The Phillipian. Designed by Ally Klionsky '17. -->
 <!DOCTYPE html>
