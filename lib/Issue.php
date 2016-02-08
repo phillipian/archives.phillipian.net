@@ -48,7 +48,7 @@
      */
     public function getPrettyDate() {
       $converted_date = mktime(0, 0, 0, $this->month, $this->day, $this->year);
-      return date("F jS, Y", $converted_date);
+      return date("F j, Y", $converted_date);
     }
 
     public function getDate() {
