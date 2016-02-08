@@ -7,12 +7,11 @@ body {
   background-color: white;
   width: 100%;
   height: 100%;
-  /*font-family: Georgia, Times, 'Times New Roman', serif;*/
-  font-family: sans-serif;
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 .wrapper .header {
-  background-color: black;
+  background-color: #00223C;
   color: white;
   height: 300px;
   clear: both;
@@ -26,7 +25,7 @@ body {
 
 .wrapper .header .content .branding {
   height: 100%;
-  width: 800px;
+  width: 750px;
   float: left;
 }
 
@@ -45,6 +44,8 @@ body {
 
 .wrapper .header .content .branding p {
   font-weight: 100;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .wrapper .header .navigation {
@@ -78,7 +79,7 @@ body {
 }
 
 .wrapper .header .navigation ul a.selected li {
-  background-color: #002750;
+  background-color: #023960;
 }
 
 .wrapper .header .navigation ul li:hover {
@@ -120,6 +121,7 @@ body {
   appearance: none;
   background-color: transparent;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 .wrapper h3.redirect {
