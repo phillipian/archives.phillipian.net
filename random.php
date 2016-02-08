@@ -9,7 +9,7 @@
 <script type='text/javascript'>
   window.setTimeout(function() {
     window.location.href = "<?php echo $random->getURL(); ?>";
-  }, 10000);
+  }, 1000);
 </script>
 
 <?php include('includes/footer.php'); ?>
