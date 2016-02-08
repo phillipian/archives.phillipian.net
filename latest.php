@@ -1,5 +1,6 @@
 <?php
   if (array_key_exists('t', $_GET))  {
+    require('lib/Archive.php');
     $archive = new Archive();
     $latest = $archive->getLatest();
     header("Location: ".(string)$latest->getThumbnail());
