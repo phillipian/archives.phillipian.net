@@ -45,12 +45,9 @@
 
       $issues = [];
 
-      $stmt;
+      $stmt = $this->db->query("SELECT * FROM `archives` WHERE YEAR(published)=$year ORDER BY published DESC");
 
-      if ($count == 0) {
-        $stmt = $this->db->query("SELECT * FROM `archives` WHERE YEAR(published)=$year ORDER BY published DESC");
-      }
-      else {
+      if ($count != 0) {
         $stmt = $this->db->query("SELECT * FROM `archives` WHERE YEAR(published)=$year ORDER BY published DESC LIMIT $count");
       }
 
