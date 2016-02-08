@@ -3,7 +3,7 @@
   <?php foreach($archive->getRecent(15) as $issue): ?>
     <div class='issue'>
       <h3><?php echo $issue->getPrettyDate();?></h3>
-      <a href="<?php echo $issue->getURL(); ?>">
+      <a href="<?php echo $issue->getURL(); ?>" target='_blank'>
         <img src="<?php echo (string)$issue->getThumbnail(); ?>">
       </a>
     </div>
