@@ -8,7 +8,7 @@
   </div>
   <div class='navigation'>
     <ul>
-      <a href='../' <?php if (basename($_SERVER['REQUEST_URI'], '.php') === '') echo "class='selected'"; ?>><li><p>Recent</p></li></a>
+      <a href='../' <?php if (basename($_SERVER['REQUEST_URI'], '.php') === '') echo "class='selected'"; ?>><li><p>Recent Issues</p></li></a>
       <a <?php if (basename(strtok($_SERVER["REQUEST_URI"],'?'), '.php') === 'explore') echo "class='selected'"; ?>>
         <li>
           <form action='../explore' method='GET'>
@@ -19,6 +19,7 @@
                 <option disabled='disabled'>Explore by Year</option>
               <?php endif ?>
               <?php for($y = date('Y'); $y >= Archive::MIN_YEAR; $y--): ?>
+                <?php if ($y == 2003) continue; ?>
                 <?php if (array_key_exists('year', $_GET) && $_GET['year'] == $y): ?>
                   <option selected='selected' value='<?php echo $y; ?>'>Issues from <?php echo $y; ?></option>
                 <?php else: ?>
@@ -30,9 +31,9 @@
         </li>
       </a>
       <a href='../today' <?php if (basename($_SERVER['REQUEST_URI'], '.php') === 'today') echo "class='selected'"; ?>><li><p>Today in History</p></li></a>
-      <a href='../latest'><li><p>Latest</p></li></a>
-      <a href='../random'><li><p>Random</p></li></a>
-      <a href='https://twitter.com/pliparchives'><li><p>Twitter</p></li></a>
+      <a href='../latest'><li><p>Latest Issue</p></li></a>
+      <a href='../random'><li><p>Random Issue</p></li></a>
+      <a href='https://twitter.com/pliparchives'><li><p>Archive Twitter</p></li></a>
     </ul>
   </div>
 </div>
