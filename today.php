@@ -1,5 +1,5 @@
 <?php
-  $title = "The Phillipian Archives: Today in History";
+  $title = "The Phillipian: Archives &mdash; Today in History";
   include('includes/header.php');
   include('views/today.php');
   include('includes/footer.php');
