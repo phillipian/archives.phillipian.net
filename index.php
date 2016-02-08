@@ -1,5 +1,5 @@
 <?php
-  $title = 'Recent Issues';
+  $title = '';
   include('includes/header.php');
   include('views/recent.php');
   include('includes/footer.php');

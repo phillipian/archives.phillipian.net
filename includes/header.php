@@ -2,7 +2,12 @@
   include_once(__DIR__.'/../lib/Archive.php');
   $archive = new Archive();
 
-  $title = "The Phillipian Archives: ".$title;
+  if ($title === '') {
+    $title = "The Phillipian Archives";
+  }
+  else {
+    $title = "The Phillipian Archives: ".$title;
+  }
 
   // http://stackoverflow.com/a/6225706
   function sanitize_output($buffer) {
@@ -48,7 +53,7 @@
 
     <!-- Open Graph data -->
     <meta property='og:url' content='http://archives.phillipian.net' />
-    <meta property='og:title' content='The Phillipian Archives' />
+    <meta property='og:title' content="<?php echo $title; ?>" />
     <meta property='og:description' content="The Phillipian's Archives allow you to explore the 5.2k+ past issues of The Phillipian since its founding in 1857." />
     <meta property='og:image' content='http://archives.phillipian.net/assets/images/pliparchives_p.jpg' />
 
@@ -59,13 +64,13 @@
     <!-- Twitter data -->
     <meta name='twitter:card' content='summary' />
     <meta name='twitter:site' content='@phillipian' />
-    <meta name='twitter:title' content='The Phillipian Archives' />
+    <meta name='twitter:title' content="<?php echo $title; ?>" />
     <meta name='twitter:description' content="The Phillipian's Archives allow you to explore the 5.2k+ past issues of The Phillipian since its founding in 1857." />
     <meta name='twitter:image' content='http://archives.phillipian.net/assets/images/pliparchives_p.jpg' />
 
     <!-- Google Plus data -->
     <meta itemscope itemtype='https://schema.org/WebSite' />
-    <meta itemprop='name' content='The Phillipian Archives' />
+    <meta itemprop='name' content="<?php echo $title; ?>" />
     <meta itemprop='description' content="The Phillipian's Archives allow you to explore the 5.2k+ past issues of The Phillipian since its founding in 1857." />
     <meta itemprop='image' content='http://archives.phillipian.net/assets/images/pliparchives_p.jpg' />
   </head>
