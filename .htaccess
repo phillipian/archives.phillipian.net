@@ -4,4 +4,4 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^explore/year/(.+)$ /explore.php?year=$1 [L]
+RewriteRule ^explore/([^/]+)/([^/]+) /explore.php?$1=$2
