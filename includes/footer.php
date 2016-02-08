@@ -9,5 +9,7 @@
       ga('create', 'UA-5329517-13', 'auto');
       ga('send', 'pageview');
     </script>
+    <script type='text/javascript' src='//code.jquery.com/jquery-2.2.0.min.js'></script>
+    <script type='text/javascript' src='scripts/js/scroll.js'></script>
   </body>
 </html>
