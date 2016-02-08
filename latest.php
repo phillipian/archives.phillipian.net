@@ -1,5 +1,5 @@
 <?php
-  $title = "The Phillipian: Archives &mdash; Random";
+  $title = 'Latest Issue';
   include('includes/header.php');
   $latest = $archive->getLatest();
 ?>

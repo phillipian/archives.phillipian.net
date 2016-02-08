@@ -1,5 +1,5 @@
 <?php
-  $title = "The Phillipian: Archives &mdash; Random";
+  $title = 'Random Issue';
   include('includes/header.php');
   $random = $archive->getRandom();
 ?>
