@@ -58,6 +58,7 @@
     <meta property='og:image' content='http://archives.phillipian.net/assets/images/pliparchives_p.jpg' />
 
     <!-- Facebook data -->
+    <meta property='fb:admins' content='100004691580883' />
     <meta property='fb:page_id' content='201784209836581' />
 
     <!-- Twitter data -->
