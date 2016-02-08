@@ -19,7 +19,7 @@
     <meta property='og:url' content='http://archives.phillipian.net' />
     <meta property='og:title' content='The Phillipian: Archives' />
     <meta property='og:description' content="The Phillipian's Archives allow you to explore 5.2k+ past issues of The Phillipian since its founding in 1878." />
-    <meta property='og:image' content='LOGO' />
+    <meta property='og:image' content='http://archives.phillipian.net/assets/images/pliparchives_p.jpg' />
 
     <!-- Facebook data -->
     <meta property='fb:page_id' content='201784209836581' />
@@ -30,13 +30,13 @@
     <meta name='twitter:site' content='@phillipian' />
     <meta name='twitter:title' content='The Phillipian: Archives' />
     <meta name='twitter:description' content="The Phillipian's Archives allow you to explore 5.2k+ past issues of The Phillipian since its founding in 1878." />
-    <meta name='twitter:image' content='LOGO' />
+    <meta name='twitter:image' content='http://archives.phillipian.net/assets/images/pliparchives_p.jpg' />
 
     <!-- Google Plus data -->
     <meta itemscope itemtype='https://schema.org/WebSite' />
     <meta itemprop='name' content='The Phillipian: Archives' />
     <meta itemprop='description' content="The Phillipian's Archives allow you to explore 5.2k+ past issues of The Phillipian since its founding in 1878." />
-    <meta itemprop='image' content='LOGO' />
+    <meta itemprop='image' content='http://archives.phillipian.net/assets/images/pliparchives_p.jpg' />
   </head>
   <body>
     <div class='wrapper'>
