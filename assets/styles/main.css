@@ -19,6 +19,7 @@ body {
 
 .wrapper .header .content {
   width: 1200px;
+  background-color: #00223C;
   margin: 0 auto;
   height: 250px;
 }
@@ -62,6 +63,7 @@ body {
 }
 
 .wrapper .header .navigation ul {
+  background-color: #095B9B;
   list-style-type: none;
   height: inherit;
   width: 1200px;
