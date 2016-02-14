@@ -12,7 +12,7 @@
   include('includes/header.php');
   $latest = $archive->getLatest();
   if (!headers_sent()) {
-    header('Location: '.(string)$latest->getThumbnail());
+    header('Location: '.$latest->getURL());
   }
 ?>
 
