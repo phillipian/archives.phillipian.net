@@ -19,7 +19,6 @@
                 <option disabled='disabled'>Explore by Year</option>
               <?php endif ?>
               <?php for($y = date('Y'); $y >= Archive::MIN_YEAR; $y--): ?>
-                <?php if ($y == 2003) continue; ?>
                 <?php if (array_key_exists('year', $_GET) && $_GET['year'] == $y): ?>
                   <option selected='selected' value='<?php echo $y; ?>'>Issues from <?php echo $y; ?></option>
                 <?php else: ?>
